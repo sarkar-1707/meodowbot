@@ -12,11 +12,11 @@ from datetime import datetime
 
 API_ID = "14050586"
 API_HASH = "42a60d9c657b106370c79bb0a8ac560c"
-BOT_TOKEN = os.environ.get("BOT_TOKEN", None) 
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "6122528873:AAHnPWje6k8u0XUFX3VIhMoCoZMe5ZVrSpE") 
 MONGO_URL = "mongodb+srv://hnyx:wywyw2@cluster0.9dxlslv.mongodb.net/?retryWrites=true&w=majority"
 DATABASE_NAME = os.environ.get("DATABASE_NAME") 
-BOT_USERNAME = os.environ.get("BOT_USERNAME")
-BOT_NAME = os.environ.get("BOT_NAME")
+BOT_USERNAME = os.environ.get("BOT_USERNAME", "@meodow_chatbot")
+BOT_NAME = os.environ.get("BOT_NAME", "***𝐌ᴇᴏᴅᴏᴡ </𝟑*")
 ADMINS = os.environ.get("ADMINS")
 
 bot = Client(
@@ -59,7 +59,7 @@ async def restart(client, m: Message):
     await asyncio.sleep(0.1)
     await accha.edit("𝐒𝐭𝐚𝐫𝐭𝐞𝐝.✓")
     await asyncio.sleep(0.2)
-    await accha.edit("🥵𝙽𝙾𝚆 𝙲𝙾𝙼𝙴 𝙷𝙴𝚁𝙴 👉 @LOVE_FEELINGS_WILL🥀 𝙰𝙽𝙳 𝙼𝙰𝙺𝙴 𝙶𝙸𝚁𝙻𝙵𝚁𝙸𝙴𝙽𝙳🌹💋")
+    await accha.edit("ok vai ok")
        
 @bot.on_message(
     filters.command(["chatbot off", f"chatbot@{BOT_USERNAME} off"], prefixes=["/", ".", "?", "-"])
